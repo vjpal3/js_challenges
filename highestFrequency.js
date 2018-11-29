@@ -26,3 +26,6 @@ highestFrequency(['a', 'c', 'c', 'b'])
 
 highestFrequency(['d', 'b', 'c', 'a'])
 => 'd'
+
+//time-complexity O(n)
+//space-complexity O(n)
