@@ -15,6 +15,9 @@ function flatten(arr) {
   return newArr;
 }
 
+Time complexity:  O(n) - linear
+Space complexity:  O(n) - linear
+
 flatten(['abc', ['def', ['ghi', ['jkl']]]]);
 => [ 'abc', 'def', 'ghi', 'jkl' ]
 
