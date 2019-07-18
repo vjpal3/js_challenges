@@ -1,0 +1,11 @@
+function containsDuplicates(a) {
+    if (!a || !a.length || a.length === 1)
+            return false;
+    
+    a.sort(function(a, b){return a-b});
+    for(let i=1; i<a.length; i++) {
+        if(a[i] === a[i-1])
+            return true;
+    }
+    return false;
+}
