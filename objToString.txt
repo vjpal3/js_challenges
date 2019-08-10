@@ -1,0 +1,23 @@
+list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
+// returns 'Bart, Lisa & Maggie'
+list([ {name: 'Bart'}, {name: 'Lisa'} ])
+// returns 'Bart & Lisa'
+list([ {name: 'Bart'} ])
+// returns 'Bart'
+list([])
+// returns ''
+
+function list(names){
+    arr = names.map((val) => {
+  	let {name} = val;
+  	return name;
+  });
+  if(arr.length <= 1) {
+    return arr.join('');
+  }
+  else {
+    let str = arr.join(', ');
+    lastComma = str.lastIndexOf(',');
+    return `${str.substring(0, lastComma)} &${str.substring(lastComma + 1)}`;
+  }
+}
