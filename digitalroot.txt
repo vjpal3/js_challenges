@@ -1,0 +1,16 @@
+/* Find digital root of a number
+digital_root(942)
+=> 9 + 4 + 2
+=> 15 ...
+=> 1 + 5
+=> 6  */
+
+function digitalRoot(n) {
+  let sum = `${n}`.split('').reduce((acc, next) => acc + +next, 0);
+  if(sum > 10) {
+    return digitalRoot(sum);
+  }
+  else {
+    return sum;
+  }
+}
