@@ -56,6 +56,11 @@ ul {
   margin: 10px;
 }
 
+.todo-text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: darkorange;
+}
+
 .todo-container {
   padding: 20px;
   border-bottom: 1px solid #333;
