@@ -56,6 +56,10 @@ ul {
   margin: 10px;
 }
 
+input:checked + span {
+  text-decoration: line-through;
+}
+
 .todo-text {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: darkorange;
