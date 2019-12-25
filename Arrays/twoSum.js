@@ -1,3 +1,18 @@
+const twoSum2 = (arr, sum) => {
+    const pairs = [];
+    const store = [];
+
+    for (let num of arr) {
+        let needed = sum - num;
+
+        if(store.indexOf(needed) !== -1) {
+            pairs.push([num, needed]);
+        }
+        store.push(num);
+    }
+    console.log(pairs);
+}
+
 const twoSum = (arr, sum) => {
     const diff = [];
     for (let num of arr) {
@@ -15,5 +30,5 @@ const twoSum = (arr, sum) => {
     console.log(output);
 }
 
-twoSum([1, 2, 2, 3, 4], 4);
+twoSum2([1, 2, 2, 3, 4], 4);
 
