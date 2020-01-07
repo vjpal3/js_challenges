@@ -20,6 +20,6 @@ function sumInRange(nums, queries) {
 
   let total = results.reduce((sum, num) => (sum += num));
 
-  if (results >= 0) return total % modVal;
+  if (results >= 0) return total;
   else return ((total % modVal) + modVal) % modVal;
 }
